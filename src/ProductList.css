@@ -163,6 +163,20 @@ body {
 .cart{
     color: white;
     display: flex;
+    position: relative;
+}
+.cart-count{
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    background-color: #ff4757;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 25px;
+    text-align: center;
 }
 .cart_quantity_count{
     margin-top: 16px;
@@ -213,6 +227,18 @@ body {
   
   .product-button:hover {
     background-color: #45a049;
+  }
+
+  .product-button.disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+  }
+
+  .product-button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
   }
   
   .product-button.added-to-cart {
